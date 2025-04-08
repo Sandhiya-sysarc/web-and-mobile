@@ -11,7 +11,10 @@ export class HomePage {
 
   constructor(public router:Router) {}
 
-  onClick(){
+  openCamera(){
     this.router.navigate(['camera-plugin'])
+  }
+  openDB(){
+    this.router.navigate(['pouch-db'])
   }
 }

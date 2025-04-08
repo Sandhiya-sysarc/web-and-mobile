@@ -15,6 +15,11 @@ const routes: Routes = [
     path: 'camera-plugin',
     loadChildren: () => import('./camera-plugin/camera-plugin.module').then( m => m.CameraPluginPageModule)
   },
+  {
+    path: 'pouch-db',
+    loadChildren: () => import('./pouch-db/pouch-db.module').then( m => m.PouchDbPageModule)
+  },
+
 ];
 
 @NgModule({
